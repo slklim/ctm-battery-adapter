@@ -34,9 +34,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 1.152,
-          "height": 1.152,
-          "width": 1.152
+          "drill": 0.0,
+          "height": 0.35,
+          "width": 0.8
         },
         "silk_line_width": 0.12,
         "silk_text_italic": false,
@@ -45,6 +45,7 @@
         "silk_text_thickness": 0.15,
         "silk_text_upright": false,
         "zones": {
+          "45_degree_only": false,
           "min_clearance": 0.0
         }
       },
@@ -110,6 +111,8 @@
         "zones_intersect": "error"
       },
       "rules": {
+        "allow_blind_buried_vias": false,
+        "allow_microvias": false,
         "max_error": 0.005,
         "min_clearance": 0.0,
         "min_connection": 0.0,
@@ -126,8 +129,6 @@
         "min_track_width": 0.19999999999999998,
         "min_via_annular_width": 0.049999999999999996,
         "min_via_diameter": 0.39999999999999997,
-        "solder_mask_clearance": 0.0,
-        "solder_mask_min_width": 0.0,
         "solder_mask_to_copper_clearance": 0.0,
         "use_height_for_length_calcs": true
       },
@@ -180,7 +181,8 @@
           "drill": 0.0
         }
       ],
-      "zones_allow_external_fillets": false
+      "zones_allow_external_fillets": false,
+      "zones_use_no_outline": true
     },
     "layer_presets": [],
     "viewports": []
@@ -401,11 +403,16 @@
     }
   },
   "libraries": {
-    "pinned_footprint_libs": [],
-    "pinned_symbol_libs": []
+    "pinned_footprint_libs": [
+      "_slk",
+      "slk"
+    ],
+    "pinned_symbol_libs": [
+      "slk"
+    ]
   },
   "meta": {
-    "filename": "ctm_battery_adapter.kicad_pro",
+    "filename": "ctm_battery.kicad_pro",
     "version": 1
   },
   "net_settings": {
@@ -439,10 +446,10 @@
     "last_paths": {
       "gencad": "",
       "idf": "",
-      "netlist": "",
+      "netlist": "../../../../../Program Files/KiCad/6.0/",
       "specctra_dsn": "",
-      "step": "",
-      "vrml": ""
+      "step": "ctm_battery.step",
+      "vrml": "ctm_battery.wrl"
     },
     "page_layout_descr_file": ""
   },
@@ -480,7 +487,7 @@
       "workbook_filename": ""
     },
     "page_layout_descr_file": "",
-    "plot_directory": "",
+    "plot_directory": "./",
     "spice_adjust_passive_values": false,
     "spice_current_sheet_as_root": false,
     "spice_external_command": "spice \"%I\"",
