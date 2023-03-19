@@ -460,58 +460,62 @@
         )
       )
     )
-    (symbol "Regulator_Switching:AP63203WU" (in_bom yes) (on_board yes)
-      (property "Reference" "U" (at -7.62 6.35 0)
+    (symbol "Regulator_Linear:TLV75730PDRV" (pin_names (offset 0.254)) (in_bom yes) (on_board yes)
+      (property "Reference" "U" (at -3.81 5.715 0)
         (effects (font (size 1.27 1.27)))
       )
-      (property "Value" "AP63203WU" (at 2.54 6.35 0)
-        (effects (font (size 1.27 1.27)))
+      (property "Value" "TLV75730PDRV" (at 0 5.715 0)
+        (effects (font (size 1.27 1.27)) (justify left))
       )
-      (property "Footprint" "Package_TO_SOT_SMD:TSOT-23-6" (at 0 -22.86 0)
+      (property "Footprint" "Package_SON:WSON-6-1EP_2x2mm_P0.65mm_EP1x1.6mm" (at 0 8.255 0)
+        (effects (font (size 1.27 1.27) italic) hide)
+      )
+      (property "Datasheet" "https://www.ti.com/lit/ds/symlink/tlv757p.pdf" (at 0 1.27 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "Datasheet" "https://www.diodes.com/assets/Datasheets/AP63200-AP63201-AP63203-AP63205.pdf" (at 0 0 0)
+      (property "ki_keywords" "LDO Regulator Fixed Positive" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "ki_keywords" "2A Buck DC/DC" (at 0 0 0)
+      (property "ki_description" "1A Low IQ Small Size Low Dropout Voltage Regulator, Fixed Output 3.0V, WSON6" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "ki_description" "2A, 1.1MHz Buck DC/DC Converter, fixed 3.3V output voltage, TSOT-23-6" (at 0 0 0)
+      (property "ki_fp_filters" "WSON*1EP*2x2mm*P0.65mm*" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "ki_fp_filters" "TSOT?23*" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "AP63203WU_0_1"
-        (rectangle (start -7.62 5.08) (end 7.62 -5.08)
+      (symbol "TLV75730PDRV_0_1"
+        (rectangle (start -5.08 4.445) (end 5.08 -5.08)
           (stroke (width 0.254) (type default))
           (fill (type background))
         )
       )
-      (symbol "AP63203WU_1_1"
-        (pin input line (at 10.16 -2.54 180) (length 2.54)
-          (name "FB" (effects (font (size 1.27 1.27))))
+      (symbol "TLV75730PDRV_1_1"
+        (pin power_out line (at 7.62 2.54 180) (length 2.54)
+          (name "OUT" (effects (font (size 1.27 1.27))))
           (number "1" (effects (font (size 1.27 1.27))))
         )
-        (pin input line (at -10.16 -2.54 0) (length 2.54)
-          (name "EN" (effects (font (size 1.27 1.27))))
+        (pin no_connect line (at 5.08 0 180) (length 2.54) hide
+          (name "NC" (effects (font (size 1.27 1.27))))
           (number "2" (effects (font (size 1.27 1.27))))
-        )
-        (pin power_in line (at -10.16 2.54 0) (length 2.54)
-          (name "IN" (effects (font (size 1.27 1.27))))
-          (number "3" (effects (font (size 1.27 1.27))))
         )
         (pin power_in line (at 0 -7.62 90) (length 2.54)
           (name "GND" (effects (font (size 1.27 1.27))))
+          (number "3" (effects (font (size 1.27 1.27))))
+        )
+        (pin input line (at -7.62 0 0) (length 2.54)
+          (name "EN" (effects (font (size 1.27 1.27))))
           (number "4" (effects (font (size 1.27 1.27))))
         )
-        (pin output line (at 10.16 2.54 180) (length 2.54)
-          (name "SW" (effects (font (size 1.27 1.27))))
+        (pin no_connect line (at 5.08 -2.54 180) (length 2.54) hide
+          (name "NC" (effects (font (size 1.27 1.27))))
           (number "5" (effects (font (size 1.27 1.27))))
         )
-        (pin passive line (at 10.16 0 180) (length 2.54)
-          (name "BST" (effects (font (size 1.27 1.27))))
+        (pin power_in line (at -7.62 2.54 0) (length 2.54)
+          (name "IN" (effects (font (size 1.27 1.27))))
           (number "6" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at 0 -7.62 90) (length 2.54) hide
+          (name "GND" (effects (font (size 1.27 1.27))))
+          (number "7" (effects (font (size 1.27 1.27))))
         )
       )
     )
@@ -880,54 +884,62 @@
         )
       )
     )
-    (symbol "slk:RT9080-30GJ5_TSOT-23-5" (pin_names (offset 0.254)) (in_bom yes) (on_board yes)
-      (property "Reference" "U" (at -3.81 5.715 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Value" "RT9080-30GJ5_TSOT-23-5" (at 0 5.715 0)
+    (symbol "slk:RT8010" (in_bom yes) (on_board yes)
+      (property "Reference" "U" (at -5.08 5.08 0)
         (effects (font (size 1.27 1.27)) (justify left))
       )
-      (property "Footprint" "Package_TO_SOT_SMD:TSOT-23-5" (at 0 8.255 0)
-        (effects (font (size 1.27 1.27) italic) hide)
+      (property "Value" "RT8010" (at 0 5.08 0)
+        (effects (font (size 1.27 1.27)) (justify left))
       )
-      (property "Datasheet" "https://datasheet.lcsc.com/lcsc/2012102110_Richtek-Tech-RT9080-30GJ5_C965900.pdf" (at 0 1.27 0)
+      (property "Footprint" "slk:WDFN-6L_2x2" (at -7.62 -10.16 0)
+        (effects (font (size 1.27 1.27)) (justify left) hide)
+      )
+      (property "Datasheet" "https://www.richtek.com/assets/product_file/RT8010=RT8010A/DS8010A-12.pdf" (at -1.27 -12.7 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "ki_keywords" "200mA LDO Regulator Fixed Positive" (at 0 0 0)
+      (property "ki_keywords" "Voltage regulator switching buck fixed output analog" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "ki_description" "600mA Low Dropout Voltage Regulator, Fixed Output 3.0V, TSOT-23-5" (at 0 0 0)
+      (property "ki_description" "1.5MHz, 1A, High Efficiency PWM Step-Down DC-DC Converter" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "ki_fp_filters" "SOT?23*" (at 0 0 0)
+      (property "ki_fp_filters" "TSOT?23*" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (symbol "RT9080-30GJ5_TSOT-23-5_0_1"
-        (rectangle (start -5.08 4.445) (end 5.08 -5.08)
+      (symbol "RT8010_0_1"
+        (rectangle (start -5.08 3.81) (end 5.08 -5.08)
           (stroke (width 0.254) (type default))
           (fill (type background))
         )
       )
-      (symbol "RT9080-30GJ5_TSOT-23-5_1_1"
-        (pin power_in line (at -7.62 2.54 0) (length 2.54)
-          (name "IN" (effects (font (size 1.27 1.27))))
+      (symbol "RT8010_1_1"
+        (pin no_connect line (at -7.62 -2.54 0) (length 2.54) hide
+          (name "IC" (effects (font (size 1.27 1.27))))
           (number "1" (effects (font (size 1.27 1.27))))
-        )
-        (pin power_in line (at 0 -7.62 90) (length 2.54)
-          (name "GND" (effects (font (size 1.27 1.27))))
-          (number "2" (effects (font (size 1.27 1.27))))
         )
         (pin input line (at -7.62 0 0) (length 2.54)
           (name "EN" (effects (font (size 1.27 1.27))))
+          (number "2" (effects (font (size 1.27 1.27))))
+        )
+        (pin power_in line (at -7.62 2.54 0) (length 2.54)
+          (name "VIN" (effects (font (size 1.27 1.27))))
           (number "3" (effects (font (size 1.27 1.27))))
         )
-        (pin no_connect line (at 5.08 0 180) (length 2.54) hide
-          (name "NC" (effects (font (size 1.27 1.27))))
+        (pin input line (at 7.62 2.54 180) (length 2.54)
+          (name "LX" (effects (font (size 1.27 1.27))))
           (number "4" (effects (font (size 1.27 1.27))))
         )
-        (pin power_out line (at 7.62 2.54 180) (length 2.54)
-          (name "OUT" (effects (font (size 1.27 1.27))))
+        (pin power_in line (at 1.27 -7.62 90) (length 2.54)
+          (name "GND" (effects (font (size 1.27 1.27))))
           (number "5" (effects (font (size 1.27 1.27))))
+        )
+        (pin input line (at 7.62 0 180) (length 2.54)
+          (name "VOUT" (effects (font (size 1.27 1.27))))
+          (number "6" (effects (font (size 1.27 1.27))))
+        )
+        (pin power_in line (at -1.27 -7.62 90) (length 2.54)
+          (name "EPAD" (effects (font (size 1.27 1.27))))
+          (number "7" (effects (font (size 1.27 1.27))))
         )
       )
     )
@@ -1011,6 +1023,9 @@
     )
   )
 
+  (junction (at 93.98 73.66) (diameter 0) (color 0 0 0 0)
+    (uuid 0d45dd75-c831-4235-8e06-12d169f02e20)
+  )
   (junction (at 128.27 54.61) (diameter 0) (color 0 0 0 0)
     (uuid 0e53ce33-1c6a-4a19-b391-a1fb03ca895f)
   )
@@ -1032,8 +1047,8 @@
   (junction (at 87.63 45.72) (diameter 0) (color 0 0 0 0)
     (uuid 4401e06b-d340-4f0a-b21f-b334ce8db6df)
   )
-  (junction (at 93.98 73.66) (diameter 0) (color 0 0 0 0)
-    (uuid 4512ce64-e5a1-4e40-9877-f3b03390cf1e)
+  (junction (at 120.65 73.66) (diameter 0) (color 0 0 0 0)
+    (uuid 57a18860-52ae-43c9-be42-1ebc305666de)
   )
   (junction (at 53.34 82.55) (diameter 0) (color 0 0 0 0)
     (uuid 5886b208-d825-4ad8-aec1-2e2d47ff0391)
@@ -1041,7 +1056,7 @@
   (junction (at 78.74 82.55) (diameter 0) (color 0 0 0 0)
     (uuid 6ae9f78d-9936-49f4-bf18-97b729c8e143)
   )
-  (junction (at 135.89 73.66) (diameter 0) (color 0 0 0 0)
+  (junction (at 129.54 73.66) (diameter 0) (color 0 0 0 0)
     (uuid 713d0fb1-7afa-4111-9c8c-585dbb379130)
   )
   (junction (at 110.49 55.88) (diameter 0) (color 0 0 0 0)
@@ -1053,23 +1068,20 @@
   (junction (at 66.04 82.55) (diameter 0) (color 0 0 0 0)
     (uuid 853f2ee3-6f8a-46f1-ae52-c8b094c2c4a4)
   )
-  (junction (at 127 71.12) (diameter 0) (color 0 0 0 0)
-    (uuid 88a495d7-7175-4354-9eb5-e54b026fd4db)
-  )
   (junction (at 59.69 82.55) (diameter 0) (color 0 0 0 0)
     (uuid 9b6b5da4-5c98-4e4f-a261-e5f7de371de6)
   )
   (junction (at 142.24 59.69) (diameter 0) (color 0 0 0 0)
     (uuid aaafdf54-1957-49cb-9f83-e079d4563c2c)
   )
+  (junction (at 102.87 85.09) (diameter 0) (color 0 0 0 0)
+    (uuid c26f682a-3583-44cb-9529-4717cdf6101d)
+  )
   (junction (at 147.32 38.1) (diameter 0) (color 0 0 0 0)
     (uuid c906fba8-0597-4f9a-ac44-9b339c8f8c54)
   )
   (junction (at 102.87 55.88) (diameter 0) (color 0 0 0 0)
     (uuid c990c75f-2c34-4ae8-8f66-b6076fc820e9)
-  )
-  (junction (at 116.84 73.66) (diameter 0) (color 0 0 0 0)
-    (uuid cbdcde90-d149-4004-a1b8-9ba9b2e103ec)
   )
   (junction (at 72.39 82.55) (diameter 0) (color 0 0 0 0)
     (uuid f678dd1e-6d9b-4a44-bfca-054b7528c2e1)
@@ -1078,6 +1090,10 @@
     (uuid fc9657ae-aeab-4e00-b84b-5f89ab4c6b19)
   )
 
+  (wire (pts (xy 120.65 76.2) (xy 120.65 73.66))
+    (stroke (width 0) (type default))
+    (uuid 009c6542-c44d-4742-aac8-41ffc25e064b)
+  )
   (wire (pts (xy 113.03 45.72) (xy 113.03 41.91))
     (stroke (width 0) (type default))
     (uuid 029b1d69-ee74-4eaf-a8d1-918474854316)
@@ -1090,11 +1106,7 @@
     (stroke (width 0) (type default))
     (uuid 0585ce93-86cf-4c9e-9174-08a626cee270)
   )
-  (wire (pts (xy 116.84 71.12) (xy 118.11 71.12))
-    (stroke (width 0) (type default))
-    (uuid 061fd373-99b2-47c8-81ae-5143cd881363)
-  )
-  (polyline (pts (xy 91.44 63.5) (xy 130.81 63.5))
+  (polyline (pts (xy 91.44 63.5) (xy 124.46 63.5))
     (stroke (width 0) (type default))
     (uuid 069f6618-8fcc-422d-8644-a45afd571f27)
   )
@@ -1123,7 +1135,7 @@
     (stroke (width 0) (type default))
     (uuid 0b5d0d7f-1f4f-4168-ab27-0b598da1320f)
   )
-  (polyline (pts (xy 62.23 30.48) (xy 62.23 27.94))
+  (polyline (pts (xy 60.96 30.48) (xy 60.96 27.94))
     (stroke (width 0) (type default))
     (uuid 0c83ad78-8d18-4426-ab7b-0fbba58a0700)
   )
@@ -1132,11 +1144,15 @@
     (uuid 0d2f6329-2aec-47cc-8904-9c0ffba8a939)
   )
 
-  (wire (pts (xy 144.78 83.82) (xy 144.78 85.09))
+  (wire (pts (xy 138.43 83.82) (xy 138.43 85.09))
     (stroke (width 0) (type default))
     (uuid 0edffb3f-2fd7-4ccc-b925-11192c43d0c4)
   )
-  (polyline (pts (xy 132.08 66.04) (xy 154.94 66.04))
+  (wire (pts (xy 93.98 73.66) (xy 93.98 76.2))
+    (stroke (width 0) (type default))
+    (uuid 10e0bf75-7ae1-43b3-b4c2-234277de4aa0)
+  )
+  (polyline (pts (xy 125.73 66.04) (xy 147.32 66.04))
     (stroke (width 0) (type default))
     (uuid 11cfee22-a71a-460e-ba62-77af86527e90)
   )
@@ -1166,7 +1182,7 @@
     (stroke (width 0) (type default))
     (uuid 1fec6a98-c74b-4e92-bfc3-dd6385baecba)
   )
-  (polyline (pts (xy 43.18 30.48) (xy 62.23 30.48))
+  (polyline (pts (xy 43.18 30.48) (xy 60.96 30.48))
     (stroke (width 0) (type default))
     (uuid 23a8ce6b-65dd-4c6d-822b-01afd1624b50)
   )
@@ -1208,6 +1224,10 @@
     (stroke (width 0) (type default))
     (uuid 2b394c0f-eac9-44f0-a7c8-2b456b9d46aa)
   )
+  (wire (pts (xy 101.6 83.82) (xy 101.6 85.09))
+    (stroke (width 0) (type default))
+    (uuid 2c1439a9-7824-4c9d-93ec-82e995d1ac79)
+  )
   (wire (pts (xy 48.26 54.61) (xy 50.8 54.61))
     (stroke (width 0) (type default))
     (uuid 2cd02873-d9fc-47ee-a622-d8b235494aeb)
@@ -1232,7 +1252,7 @@
     (stroke (width 0) (type default))
     (uuid 32f50467-fdc6-43d4-a7ee-ab75e0578095)
   )
-  (wire (pts (xy 135.89 76.2) (xy 135.89 73.66))
+  (wire (pts (xy 129.54 76.2) (xy 129.54 73.66))
     (stroke (width 0) (type default))
     (uuid 3409b962-871b-4bc9-8eae-9535801e1919)
   )
@@ -1245,11 +1265,11 @@
     (uuid 34d9d746-4031-47d7-a623-ef4c01ea8059)
   )
 
-  (wire (pts (xy 135.89 73.66) (xy 135.89 72.39))
+  (wire (pts (xy 129.54 73.66) (xy 129.54 72.39))
     (stroke (width 0) (type default))
     (uuid 3534798d-1e8f-4df6-b99c-1cb75ea66fbb)
   )
-  (wire (pts (xy 115.57 73.66) (xy 116.84 73.66))
+  (wire (pts (xy 110.49 73.66) (xy 111.76 73.66))
     (stroke (width 0) (type default))
     (uuid 3b28ecb7-21e7-4730-8a16-859bccb46133)
   )
@@ -1269,7 +1289,7 @@
     (stroke (width 0) (type default))
     (uuid 442f9732-e139-4d14-885b-7668db14d9b6)
   )
-  (polyline (pts (xy 130.81 63.5) (xy 130.81 91.44))
+  (polyline (pts (xy 124.46 63.5) (xy 124.46 92.71))
     (stroke (width 0) (type default))
     (uuid 44c0b429-2b67-40d5-a648-dfefb0904485)
   )
@@ -1294,16 +1314,12 @@
     (stroke (width 0) (type default))
     (uuid 5383035c-de39-4cc1-8dff-23c73c1aacf0)
   )
-  (wire (pts (xy 125.73 76.2) (xy 125.73 73.66))
-    (stroke (width 0) (type default))
-    (uuid 553f20e0-2aa3-430f-9898-6b9a0d7dc231)
-  )
   (polyline (pts (xy 153.67 62.23) (xy 85.09 62.23))
     (stroke (width 0) (type default))
     (uuid 564987f1-b600-4792-b115-6bfb6b0c82a2)
   )
 
-  (wire (pts (xy 137.16 76.2) (xy 135.89 76.2))
+  (wire (pts (xy 130.81 76.2) (xy 129.54 76.2))
     (stroke (width 0) (type default))
     (uuid 57507968-0104-4e6c-9a08-92c0b5e8bead)
   )
@@ -1311,7 +1327,11 @@
     (stroke (width 0) (type default))
     (uuid 58620b5d-acea-476e-94b2-44c69e023a2d)
   )
-  (wire (pts (xy 135.89 73.66) (xy 137.16 73.66))
+  (wire (pts (xy 104.14 83.82) (xy 104.14 85.09))
+    (stroke (width 0) (type default))
+    (uuid 58e1fa90-d0a4-49b0-bf5c-07ea152b778e)
+  )
+  (wire (pts (xy 129.54 73.66) (xy 130.81 73.66))
     (stroke (width 0) (type default))
     (uuid 5ab306d8-f570-4d77-9d35-d4b9fb17ff44)
   )
@@ -1322,14 +1342,6 @@
   (wire (pts (xy 85.09 81.28) (xy 85.09 82.55))
     (stroke (width 0) (type default))
     (uuid 5dba2433-c086-4917-b64c-443838268568)
-  )
-  (wire (pts (xy 115.57 78.74) (xy 128.27 78.74))
-    (stroke (width 0) (type default))
-    (uuid 5dff07a7-7c2f-4103-b46e-c9067988da8a)
-  )
-  (wire (pts (xy 93.98 73.66) (xy 93.98 78.74))
-    (stroke (width 0) (type default))
-    (uuid 5eef6303-0cb3-4fdf-8cfd-5df423c67e82)
   )
   (wire (pts (xy 144.78 44.45) (xy 144.78 48.26))
     (stroke (width 0) (type default))
@@ -1353,10 +1365,6 @@
     (uuid 667f8c08-f91a-4b7b-b456-80b7c6d13d7d)
   )
 
-  (wire (pts (xy 125.73 71.12) (xy 127 71.12))
-    (stroke (width 0) (type default))
-    (uuid 681f038c-e51c-47f8-8159-ffb13121c8fc)
-  )
   (wire (pts (xy 110.49 54.61) (xy 110.49 55.88))
     (stroke (width 0) (type default))
     (uuid 694dc295-ab68-4e90-ae28-7d1d96870278)
@@ -1368,10 +1376,6 @@
   (wire (pts (xy 66.04 54.61) (xy 66.04 55.88))
     (stroke (width 0) (type default))
     (uuid 6a54d16a-8a50-4f6a-995f-054f680c9234)
-  )
-  (wire (pts (xy 127 71.12) (xy 127 69.85))
-    (stroke (width 0) (type default))
-    (uuid 6cb336d5-831e-49fd-a8cd-238114ed1269)
   )
   (wire (pts (xy 46.99 82.55) (xy 53.34 82.55))
     (stroke (width 0) (type default))
@@ -1385,7 +1389,7 @@
     (stroke (width 0) (type default))
     (uuid 704cda7d-4d2d-4233-bffe-2f4257a8f5c0)
   )
-  (polyline (pts (xy 157.48 63.5) (xy 157.48 91.44))
+  (polyline (pts (xy 151.13 63.5) (xy 151.13 91.44))
     (stroke (width 0) (type default))
     (uuid 70be6023-194b-4c62-820e-de62ea611a0e)
   )
@@ -1398,7 +1402,7 @@
     (stroke (width 0) (type default))
     (uuid 74b503af-4890-4088-a76e-a7c1ce17f3f8)
   )
-  (polyline (pts (xy 91.44 63.5) (xy 91.44 91.44))
+  (polyline (pts (xy 91.44 63.5) (xy 91.44 92.71))
     (stroke (width 0) (type default))
     (uuid 7649d8cf-fd32-4fa8-afd7-5613202d342b)
   )
@@ -1410,10 +1414,6 @@
   (wire (pts (xy 78.74 81.28) (xy 78.74 82.55))
     (stroke (width 0) (type default))
     (uuid 7a4fa35c-baf0-40ae-9182-043cd8bfd35b)
-  )
-  (wire (pts (xy 116.84 73.66) (xy 125.73 73.66))
-    (stroke (width 0) (type default))
-    (uuid 7b165ffc-9fdc-4322-83aa-f3463228a4da)
   )
   (wire (pts (xy 147.32 48.26) (xy 147.32 49.53))
     (stroke (width 0) (type default))
@@ -1435,7 +1435,7 @@
     (stroke (width 0) (type default))
     (uuid 80a65670-b2f5-4bc5-98e0-266569c666c4)
   )
-  (polyline (pts (xy 154.94 44.45) (xy 154.94 62.23))
+  (polyline (pts (xy 154.94 45.72) (xy 154.94 62.23))
     (stroke (width 0) (type default))
     (uuid 819290d6-33c9-466d-b13c-120f7e06c631)
   )
@@ -1444,13 +1444,13 @@
     (uuid 82d90c3d-f4f7-4dfe-a5d8-34f5c697b123)
   )
 
+  (wire (pts (xy 110.49 76.2) (xy 120.65 76.2))
+    (stroke (width 0) (type default))
+    (uuid 841b4c1d-3742-469b-97ef-dcc4156deccc)
+  )
   (wire (pts (xy 133.35 41.91) (xy 134.62 41.91))
     (stroke (width 0) (type default))
     (uuid 85ab32f8-17ea-4346-9472-46d229f7cfdb)
-  )
-  (wire (pts (xy 115.57 76.2) (xy 116.84 76.2))
-    (stroke (width 0) (type default))
-    (uuid 8790a32b-e7f9-4876-90fe-e3304022d220)
   )
   (wire (pts (xy 144.78 38.1) (xy 147.32 38.1))
     (stroke (width 0) (type default))
@@ -1464,7 +1464,7 @@
     (stroke (width 0) (type default))
     (uuid 8af787ee-aefb-4de7-82c5-d157536e8746)
   )
-  (polyline (pts (xy 165.1 44.45) (xy 165.1 62.23))
+  (polyline (pts (xy 165.1 45.72) (xy 165.1 62.23))
     (stroke (width 0) (type default))
     (uuid 8b0fb09e-31a9-42bc-8770-720f3c2b902a)
   )
@@ -1482,10 +1482,6 @@
     (stroke (width 0) (type default))
     (uuid 8edb9f1d-5661-48de-9f74-22186c3c3121)
   )
-  (wire (pts (xy 127 71.12) (xy 128.27 71.12))
-    (stroke (width 0) (type default))
-    (uuid 986ca2e5-2701-49e2-8696-87f7b04bf4a5)
-  )
   (wire (pts (xy 114.3 48.26) (xy 114.3 55.88))
     (stroke (width 0) (type default))
     (uuid 98b5b1b5-0a63-4fd5-aa15-a6f9b4f1bb53)
@@ -1502,19 +1498,23 @@
     (stroke (width 0) (type default))
     (uuid a158702d-96ec-4886-8cae-4c8850cebf92)
   )
+  (wire (pts (xy 101.6 85.09) (xy 102.87 85.09))
+    (stroke (width 0) (type default))
+    (uuid a1a2605a-d1f3-4723-961a-97ed52e5deb6)
+  )
+  (wire (pts (xy 102.87 85.09) (xy 104.14 85.09))
+    (stroke (width 0) (type default))
+    (uuid a286d9e7-267d-4827-9481-df539b358f75)
+  )
   (wire (pts (xy 53.34 81.28) (xy 53.34 82.55))
     (stroke (width 0) (type default))
     (uuid a3614917-a0f1-4901-a883-852a75fc85be)
   )
-  (polyline (pts (xy 85.09 33.02) (xy 102.87 33.02))
+  (polyline (pts (xy 85.09 33.02) (xy 101.6 33.02))
     (stroke (width 0) (type default))
     (uuid a48ca300-2f6d-4811-a7de-7ee08f901349)
   )
 
-  (wire (pts (xy 128.27 71.12) (xy 128.27 78.74))
-    (stroke (width 0) (type default))
-    (uuid a7d189ea-ede3-4067-90e9-b6215f4f753f)
-  )
   (wire (pts (xy 114.3 48.26) (xy 115.57 48.26))
     (stroke (width 0) (type default))
     (uuid a7f31171-d52e-4e79-90e3-60e6d58caae6)
@@ -1527,7 +1527,7 @@
     (stroke (width 0) (type default))
     (uuid b2922ec4-0660-4574-96b2-488f17a0966a)
   )
-  (polyline (pts (xy 154.94 44.45) (xy 165.1 44.45))
+  (polyline (pts (xy 154.94 45.72) (xy 165.1 45.72))
     (stroke (width 0) (type default))
     (uuid b2f382d3-d442-46b3-a8a4-f48fe91bde5e)
   )
@@ -1535,7 +1535,7 @@
     (stroke (width 0) (type default))
     (uuid b36d7718-bfba-4cdf-bc04-71536c8cff83)
   )
-  (polyline (pts (xy 157.48 91.44) (xy 132.08 91.44))
+  (polyline (pts (xy 151.13 91.44) (xy 125.73 91.44))
     (stroke (width 0) (type default))
     (uuid b44003e6-8d1d-41c8-bceb-e1af5dbf043f)
   )
@@ -1574,7 +1574,7 @@
     (uuid c457af4a-e622-4c6b-8282-0eaa02addc66)
   )
 
-  (wire (pts (xy 105.41 83.82) (xy 105.41 85.09))
+  (wire (pts (xy 102.87 85.09) (xy 102.87 86.36))
     (stroke (width 0) (type default))
     (uuid c8779229-9f77-4038-a147-4da44e242997)
   )
@@ -1602,16 +1602,19 @@
     (stroke (width 0) (type default))
     (uuid cb82e49b-9f72-4db8-a5ce-ca8a52fa1054)
   )
-  (polyline (pts (xy 130.81 91.44) (xy 91.44 91.44))
+  (wire (pts (xy 93.98 76.2) (xy 95.25 76.2))
+    (stroke (width 0) (type default))
+    (uuid cbf55f18-94dc-44c0-aa44-9016269084c4)
+  )
+  (wire (pts (xy 119.38 73.66) (xy 120.65 73.66))
+    (stroke (width 0) (type default))
+    (uuid cc079ead-30f5-4d5e-b38b-f143f41f16c9)
+  )
+  (polyline (pts (xy 124.46 92.71) (xy 91.44 92.71))
     (stroke (width 0) (type default))
     (uuid cc7d2466-51a9-4452-bc7e-532395dc31b7)
   )
-
-  (wire (pts (xy 95.25 78.74) (xy 93.98 78.74))
-    (stroke (width 0) (type default))
-    (uuid cf54dd96-1f1f-4c0c-84dc-b197976b44f1)
-  )
-  (polyline (pts (xy 102.87 33.02) (xy 102.87 30.48))
+  (polyline (pts (xy 101.6 33.02) (xy 101.6 30.48))
     (stroke (width 0) (type default))
     (uuid cfd5069b-372a-4239-b204-9d890c4c6682)
   )
@@ -1628,6 +1631,10 @@
     (stroke (width 0) (type default))
     (uuid d3d82a3e-690b-4ff3-a0fd-f989c10adcdf)
   )
+  (wire (pts (xy 120.65 72.39) (xy 120.65 73.66))
+    (stroke (width 0) (type default))
+    (uuid da883d13-b70d-4680-b1b0-aaf35de18f0e)
+  )
   (wire (pts (xy 46.99 72.39) (xy 46.99 73.66))
     (stroke (width 0) (type default))
     (uuid db281b3a-bf1f-4e3b-887c-7dd312da123b)
@@ -1641,10 +1648,6 @@
     (stroke (width 0) (type default))
     (uuid dd87cc0d-246e-4644-b301-242d168c89f9)
   )
-  (wire (pts (xy 116.84 73.66) (xy 116.84 71.12))
-    (stroke (width 0) (type default))
-    (uuid ddb8f7d3-0a41-497d-adb1-d9dd3a80518e)
-  )
   (wire (pts (xy 48.26 53.34) (xy 48.26 54.61))
     (stroke (width 0) (type default))
     (uuid de2fe244-ab42-4a43-b8de-9ce2833433d0)
@@ -1657,16 +1660,16 @@
     (stroke (width 0) (type default))
     (uuid e4a96089-6616-46fb-9c91-2e276b92ebb5)
   )
-  (polyline (pts (xy 154.94 66.04) (xy 154.94 63.5))
+  (polyline (pts (xy 147.32 66.04) (xy 147.32 63.5))
     (stroke (width 0) (type default))
     (uuid e4ee3bee-ca90-4694-b04c-a27d46f26192)
   )
 
-  (wire (pts (xy 152.4 73.66) (xy 153.67 73.66))
+  (wire (pts (xy 146.05 73.66) (xy 147.32 73.66))
     (stroke (width 0) (type default))
     (uuid e508d06d-4be3-4e5c-a13b-ac93bb8d5806)
   )
-  (polyline (pts (xy 132.08 63.5) (xy 132.08 91.44))
+  (polyline (pts (xy 125.73 63.5) (xy 125.73 91.44))
     (stroke (width 0) (type default))
     (uuid e6232c13-961c-4439-afb2-8dcef8f7174b)
   )
@@ -1675,7 +1678,7 @@
     (uuid e6ab2b99-f496-455f-936a-ac1583346b48)
   )
 
-  (wire (pts (xy 153.67 73.66) (xy 153.67 72.39))
+  (wire (pts (xy 147.32 73.66) (xy 147.32 72.39))
     (stroke (width 0) (type default))
     (uuid e9419698-f68f-49a7-8b74-98b4dd55aaaf)
   )
@@ -1712,7 +1715,7 @@
     (stroke (width 0) (type default))
     (uuid f9053f2b-bde3-4144-a5db-5f3292782f72)
   )
-  (polyline (pts (xy 132.08 63.5) (xy 157.48 63.5))
+  (polyline (pts (xy 125.73 63.5) (xy 151.13 63.5))
     (stroke (width 0) (type default))
     (uuid f9339bfc-4e4f-4c2b-9b75-06d7f60567fd)
   )
@@ -1733,32 +1736,28 @@
     (stroke (width 0) (type default))
     (uuid fd7a9aab-f9e4-46da-a5fe-d719692ff33f)
   )
-  (wire (pts (xy 124.46 76.2) (xy 125.73 76.2))
-    (stroke (width 0) (type default))
-    (uuid ffcbec96-8dea-4ec1-907a-0a656c9c2279)
-  )
 
-  (text "Bypass Capacitors" (at 43.815 65.405 0)
+  (text "Bypass Capacitors" (at 43.18 66.04 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 20b70c4e-66c6-4c43-806e-c93310288ef6)
   )
-  (text "Mounting\nHoles" (at 155.575 48.895 0)
+  (text "Mounting\nHoles" (at 154.94 49.53 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 433ac3a9-6d4c-4d4b-bff7-b7c440231fab)
   )
-  (text "Power Bank SoC" (at 85.725 32.385 0)
+  (text "Power Bank SoC" (at 85.09 33.02 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 6a87fb0f-3424-48fe-bc1f-f0d1fcd10dd5)
   )
-  (text "Power Connectors" (at 43.815 29.845 0)
+  (text "Power Connectors" (at 43.18 30.48 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 8633aa83-7dfe-4ed0-86f1-c6f3df67700b)
   )
-  (text "3.0V Linear Regulator" (at 132.715 65.405 0)
+  (text "3.0V Linear Regulator" (at 125.73 66.04 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 88ad1b24-5b5b-4152-94a6-9552cd3c6e05)
   )
-  (text "3V3 Buck Converter" (at 92.075 65.405 0)
+  (text "3V3 Buck Converter" (at 91.44 66.04 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid ddb7bdad-e172-4181-ab6f-9224adefb392)
   )
@@ -1772,16 +1771,16 @@
     (property "Value" "100%" (at 111.76 50.8 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "slk:LED_0402" (at 110.49 50.8 0)
+    (property "Footprint" "slk:LED_RA_0402" (at 110.49 50.8 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "https://datasheet.lcsc.com/szlcsc/1809141612_BrtLed-Bright-LED-Elec-BL-HZ337A-L6-TRB_C189305.pdf" (at 110.49 50.8 0)
+    (property "Datasheet" "~" (at 110.49 50.8 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 2517561d-49be-4085-804f-425f7f1b785b))
     (pin "2" (uuid 014144e7-beba-4094-bde6-009eb17508ff))
     (instances
-      (project "ctm_battery c"
+      (project "ctm_battery"
         (path "/f12fd207-0ea8-4e5e-ba5d-32f4ff7fde19"
           (reference "D4") (unit 1)
         )
@@ -1807,9 +1806,40 @@
     (pin "1" (uuid 96700fce-5889-4c72-80b7-19e6764de5a8))
     (pin "2" (uuid 3185b58a-94b9-42e5-b888-e5d4140f27c2))
     (instances
-      (project "ctm_battery c"
+      (project "ctm_battery"
         (path "/f12fd207-0ea8-4e5e-ba5d-32f4ff7fde19"
           (reference "C2") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Regulator_Linear:TLV75730PDRV") (at 138.43 76.2 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 225ac99e-4077-498b-a213-9842245e2334)
+    (property "Reference" "U3" (at 134.62 82.55 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "TLV75730PDRV" (at 138.43 71.12 0)
+      (effects (font (size 1.27 1.27)) (justify bottom))
+    )
+    (property "Footprint" "slk:WSON-6_2x2" (at 138.43 67.945 0)
+      (effects (font (size 1.27 1.27) italic) hide)
+    )
+    (property "Datasheet" "https://www.ti.com/lit/ds/symlink/tlv757p.pdf" (at 138.43 74.93 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 16394833-f3c6-4e2a-8e08-9e9a0ec0e31d))
+    (pin "2" (uuid 1134412c-a86c-49e0-921e-38d5ddd8327b))
+    (pin "3" (uuid 58be1d71-c712-4f85-819e-e7cdd6a439b2))
+    (pin "4" (uuid d2ee86b0-5852-414d-a448-d1114b3d82dc))
+    (pin "5" (uuid 157ff3c8-dd53-466f-9e0b-f365dba426d9))
+    (pin "6" (uuid d0461c72-4c05-4442-ae7c-fef1554198d7))
+    (pin "7" (uuid 233cf724-9cab-440c-87c8-2e502af4fb00))
+    (instances
+      (project "ctm_battery"
+        (path "/f12fd207-0ea8-4e5e-ba5d-32f4ff7fde19"
+          (reference "U3") (unit 1)
         )
       )
     )
@@ -1832,7 +1862,7 @@
     )
     (pin "1" (uuid 1aa35917-7c90-4c59-80cf-657510c140ee))
     (instances
-      (project "ctm_battery c"
+      (project "ctm_battery"
         (path "/f12fd207-0ea8-4e5e-ba5d-32f4ff7fde19"
           (reference "#PWR09") (unit 1)
         )
@@ -1849,16 +1879,16 @@
     (property "Value" "75%" (at 104.14 50.8 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
-    (property "Footprint" "slk:LED_0402" (at 102.87 50.8 0)
+    (property "Footprint" "slk:LED_RA_0402" (at 102.87 50.8 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "https://datasheet.lcsc.com/szlcsc/1809141612_BrtLed-Bright-LED-Elec-BL-HZ337A-L6-TRB_C189305.pdf" (at 102.87 50.8 0)
+    (property "Datasheet" "~" (at 102.87 50.8 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid fda4e1c2-7fd4-4f3d-9557-7ea20742b4bc))
     (pin "2" (uuid b5a03760-d05d-49c0-9ce7-e932a2f37420))
     (instances
-      (project "ctm_battery c"
+      (project "ctm_battery"
         (path "/f12fd207-0ea8-4e5e-ba5d-32f4ff7fde19"
           (reference "D3") (unit 1)
         )
@@ -1875,16 +1905,16 @@
     (property "Value" "50%" (at 96.52 50.8 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "slk:LED_0402" (at 95.25 50.8 0)
+    (property "Footprint" "slk:LED_RA_0402" (at 95.25 50.8 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "https://datasheet.lcsc.com/szlcsc/1809141612_BrtLed-Bright-LED-Elec-BL-HZ337A-L6-TRB_C189305.pdf" (at 95.25 50.8 0)
+    (property "Datasheet" "~" (at 95.25 50.8 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 4b5edb1d-50f8-4980-9f87-f16683828955))
     (pin "2" (uuid 7a5996d7-be5f-4e7d-a7d2-0294137c9c97))
     (instances
-      (project "ctm_battery c"
+      (project "ctm_battery"
         (path "/f12fd207-0ea8-4e5e-ba5d-32f4ff7fde19"
           (reference "D2") (unit 1)
         )
@@ -1908,7 +1938,7 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (instances
-      (project "ctm_battery c"
+      (project "ctm_battery"
         (path "/f12fd207-0ea8-4e5e-ba5d-32f4ff7fde19"
           (reference "H1") (unit 1)
         )
@@ -1933,35 +1963,9 @@
     )
     (pin "1" (uuid ca09e033-bfa9-49cb-a5ec-682ce8401e74))
     (instances
-      (project "ctm_battery c"
+      (project "ctm_battery"
         (path "/f12fd207-0ea8-4e5e-ba5d-32f4ff7fde19"
           (reference "#PWR014") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:C") (at 120.65 76.2 90) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 400ec7fd-2c2d-4328-9e9a-f65515227699)
-    (property "Reference" "C9" (at 124.46 74.93 90)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "100n" (at 127 77.47 90)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "Capacitor_SMD:C_0402_1005Metric" (at 124.46 75.2348 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 120.65 76.2 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 333e6f1a-0731-4370-93bc-2d0745a300b6))
-    (pin "2" (uuid 532eaf23-88df-4de4-8ba2-665eeb3665d4))
-    (instances
-      (project "ctm_battery c"
-        (path "/f12fd207-0ea8-4e5e-ba5d-32f4ff7fde19"
-          (reference "C9") (unit 1)
         )
       )
     )
@@ -1984,7 +1988,7 @@
     )
     (pin "1" (uuid ee837a66-ff41-43aa-bada-123385fbcd05))
     (instances
-      (project "ctm_battery c"
+      (project "ctm_battery"
         (path "/f12fd207-0ea8-4e5e-ba5d-32f4ff7fde19"
           (reference "#PWR0103") (unit 1)
         )
@@ -2010,7 +2014,7 @@
     (pin "1" (uuid 440f5981-1b98-476a-807b-98b4f4190b74))
     (pin "2" (uuid 0a4deaaf-7bbd-48e1-ae17-01f9d32bea1a))
     (instances
-      (project "ctm_battery c"
+      (project "ctm_battery"
         (path "/f12fd207-0ea8-4e5e-ba5d-32f4ff7fde19"
           (reference "C1") (unit 1)
         )
@@ -2034,7 +2038,7 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (instances
-      (project "ctm_battery c"
+      (project "ctm_battery"
         (path "/f12fd207-0ea8-4e5e-ba5d-32f4ff7fde19"
           (reference "H2") (unit 1)
         )
@@ -2059,7 +2063,7 @@
     )
     (pin "1" (uuid c2ec3190-7c4e-4244-947e-8b5ba499f1c7))
     (instances
-      (project "ctm_battery c"
+      (project "ctm_battery"
         (path "/f12fd207-0ea8-4e5e-ba5d-32f4ff7fde19"
           (reference "#PWR06") (unit 1)
         )
@@ -2070,7 +2074,7 @@
   (symbol (lib_id "Device:R") (at 92.71 41.91 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 5be63bd3-c920-4b64-ae72-eb9a8b67cf3b)
-    (property "Reference" "R1" (at 92.71 39.37 90)
+    (property "Reference" "R3" (at 92.71 39.37 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "4.7K" (at 92.71 44.45 90)
@@ -2085,32 +2089,32 @@
     (pin "1" (uuid 184cee21-afbf-45c6-8d24-d81b53d07680))
     (pin "2" (uuid 8162ddeb-a83c-4ec1-894d-f3fc8ceff0fc))
     (instances
-      (project "ctm_battery c"
+      (project "ctm_battery"
         (path "/f12fd207-0ea8-4e5e-ba5d-32f4ff7fde19"
-          (reference "R1") (unit 1)
+          (reference "R3") (unit 1)
         )
       )
     )
   )
 
-  (symbol (lib_id "power:+3V0") (at 153.67 72.39 0) (unit 1)
+  (symbol (lib_id "power:+3V0") (at 147.32 72.39 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 5e34771b-f401-4a23-9d47-774a8c38b9e2)
-    (property "Reference" "#PWR010" (at 153.67 76.2 0)
+    (property "Reference" "#PWR010" (at 147.32 76.2 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Value" "+3V0" (at 153.67 68.58 0)
+    (property "Value" "+3V0" (at 147.32 68.58 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 153.67 72.39 0)
+    (property "Footprint" "" (at 147.32 72.39 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "" (at 153.67 72.39 0)
+    (property "Datasheet" "" (at 147.32 72.39 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 0bbdb723-b4a2-4531-947f-1e928f180602))
     (instances
-      (project "ctm_battery c"
+      (project "ctm_battery"
         (path "/f12fd207-0ea8-4e5e-ba5d-32f4ff7fde19"
           (reference "#PWR010") (unit 1)
         )
@@ -2135,7 +2139,7 @@
     )
     (pin "1" (uuid 71fc7244-05c6-498f-8fff-5995ee55ee13))
     (instances
-      (project "ctm_battery c"
+      (project "ctm_battery"
         (path "/f12fd207-0ea8-4e5e-ba5d-32f4ff7fde19"
           (reference "#PWR019") (unit 1)
         )
@@ -2146,7 +2150,7 @@
   (symbol (lib_id "Device:R") (at 147.32 43.18 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 65c5b58c-e929-4fd2-9f2e-0bdeb80c6e65)
-    (property "Reference" "R4" (at 149.86 41.91 0)
+    (property "Reference" "R2" (at 149.86 41.91 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "0.5" (at 148.59 44.45 0)
@@ -2161,9 +2165,9 @@
     (pin "1" (uuid 392b5d46-aab1-4fc5-8632-79c49b06b6ca))
     (pin "2" (uuid c832aeb4-ad7e-40ec-86a4-0d733b81bc44))
     (instances
-      (project "ctm_battery c"
+      (project "ctm_battery"
         (path "/f12fd207-0ea8-4e5e-ba5d-32f4ff7fde19"
-          (reference "R4") (unit 1)
+          (reference "R2") (unit 1)
         )
       )
     )
@@ -2186,7 +2190,7 @@
     )
     (pin "1" (uuid 57787dd9-676f-4961-baf3-03f145575a69))
     (instances
-      (project "ctm_battery c"
+      (project "ctm_battery"
         (path "/f12fd207-0ea8-4e5e-ba5d-32f4ff7fde19"
           (reference "#PWR015") (unit 1)
         )
@@ -2194,53 +2198,24 @@
     )
   )
 
-  (symbol (lib_id "slk:RT9080-30GJ5_TSOT-23-5") (at 144.78 76.2 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 6abf4e55-81f8-42ec-aef7-6ddeae34f382)
-    (property "Reference" "U3" (at 148.59 82.55 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "RT9080-30GJ5" (at 144.78 69.85 0)
-      (effects (font (size 1.27 1.27)) (justify top))
-    )
-    (property "Footprint" "Package_TO_SOT_SMD:TSOT-23-5" (at 144.78 67.945 0)
-      (effects (font (size 1.27 1.27) italic) hide)
-    )
-    (property "Datasheet" "https://datasheet.lcsc.com/lcsc/2012102110_Richtek-Tech-RT9080-30GJ5_C965900.pdf" (at 144.78 74.93 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 47b79862-6d7c-4d53-adeb-323a3e385d18))
-    (pin "2" (uuid b6dbe258-a280-454b-ab26-515a861d9c71))
-    (pin "3" (uuid 5e348962-1c0f-4bd4-ba21-66ba8b27ee48))
-    (pin "4" (uuid 32106f05-b903-48ff-9d38-06824562332d))
-    (pin "5" (uuid b04ce78a-9f49-4fe1-a088-1d6b85aa31b0))
-    (instances
-      (project "ctm_battery c"
-        (path "/f12fd207-0ea8-4e5e-ba5d-32f4ff7fde19"
-          (reference "U3") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:+3V3") (at 135.89 72.39 0) (unit 1)
+  (symbol (lib_id "power:+3V3") (at 129.54 72.39 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 6b6ee849-9c64-4a92-a7b3-413545c0cb24)
-    (property "Reference" "#PWR0105" (at 135.89 76.2 0)
+    (property "Reference" "#PWR0105" (at 129.54 76.2 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Value" "+3V3" (at 135.89 68.58 0)
+    (property "Value" "+3V3" (at 129.54 68.58 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 135.89 72.39 0)
+    (property "Footprint" "" (at 129.54 72.39 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "" (at 135.89 72.39 0)
+    (property "Datasheet" "" (at 129.54 72.39 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid ae94e54d-bcd1-4db0-9e5c-c250ff06628f))
     (instances
-      (project "ctm_battery c"
+      (project "ctm_battery"
         (path "/f12fd207-0ea8-4e5e-ba5d-32f4ff7fde19"
           (reference "#PWR0105") (unit 1)
         )
@@ -2266,39 +2241,9 @@
     (pin "1" (uuid 36036e43-d8d8-47a7-9ab6-e8e172d6ec9e))
     (pin "2" (uuid 18dff121-caec-425d-8a35-729fd70c96f5))
     (instances
-      (project "ctm_battery c"
+      (project "ctm_battery"
         (path "/f12fd207-0ea8-4e5e-ba5d-32f4ff7fde19"
           (reference "C3") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Regulator_Switching:AP63203WU") (at 105.41 76.2 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 73853969-6f03-4608-b013-620348ee8c51)
-    (property "Reference" "U2" (at 111.76 82.55 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "AP63203WU" (at 105.41 69.85 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "Package_TO_SOT_SMD:TSOT-23-6" (at 105.41 99.06 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "https://www.diodes.com/assets/Datasheets/AP63200-AP63201-AP63203-AP63205.pdf" (at 105.41 76.2 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 820d055c-65eb-4748-8129-09e55846b066))
-    (pin "2" (uuid 27248741-0ce6-443d-8b53-f71ce182abfc))
-    (pin "3" (uuid 2d37fe13-03a3-4d91-8725-e11968f3230a))
-    (pin "4" (uuid 8d7c5177-e6c2-485f-bd87-9c0bd7958e33))
-    (pin "5" (uuid 1658c305-4c2a-4ffa-af70-add6fe62010d))
-    (pin "6" (uuid 206d5a4a-cd62-4e7c-8eb7-6ef712f33bb9))
-    (instances
-      (project "ctm_battery c"
-        (path "/f12fd207-0ea8-4e5e-ba5d-32f4ff7fde19"
-          (reference "U2") (unit 1)
         )
       )
     )
@@ -2321,7 +2266,7 @@
     )
     (pin "1" (uuid 288f7a3a-7aec-4f3c-9926-ac35d6d3793d))
     (instances
-      (project "ctm_battery c"
+      (project "ctm_battery"
         (path "/f12fd207-0ea8-4e5e-ba5d-32f4ff7fde19"
           (reference "#PWR013") (unit 1)
         )
@@ -2346,7 +2291,7 @@
     )
     (pin "1" (uuid 39af2666-4eee-4fe3-b867-ec73ae99db93))
     (instances
-      (project "ctm_battery c"
+      (project "ctm_battery"
         (path "/f12fd207-0ea8-4e5e-ba5d-32f4ff7fde19"
           (reference "#PWR011") (unit 1)
         )
@@ -2357,7 +2302,7 @@
   (symbol (lib_id "Device:R") (at 107.95 41.91 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 89ecaed6-af40-4257-987c-873a4d6c636e)
-    (property "Reference" "R2" (at 107.95 39.37 90)
+    (property "Reference" "R4" (at 107.95 39.37 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "4.7K" (at 107.95 44.45 90)
@@ -2372,9 +2317,9 @@
     (pin "1" (uuid f8ad0db2-8547-4a7a-bae2-832be2935053))
     (pin "2" (uuid d4d844a1-34dd-4b22-89c7-2946c79dd023))
     (instances
-      (project "ctm_battery c"
+      (project "ctm_battery"
         (path "/f12fd207-0ea8-4e5e-ba5d-32f4ff7fde19"
-          (reference "R2") (unit 1)
+          (reference "R4") (unit 1)
         )
       )
     )
@@ -2402,7 +2347,7 @@
     (pin "5" (uuid 011f482c-5497-4c10-a300-341b20a96dd3))
     (pin "6" (uuid 1d951f12-df42-4d76-b8fa-2ccaf0053896))
     (instances
-      (project "ctm_battery c"
+      (project "ctm_battery"
         (path "/f12fd207-0ea8-4e5e-ba5d-32f4ff7fde19"
           (reference "J1") (unit 1)
         )
@@ -2428,7 +2373,7 @@
     (pin "1" (uuid 39e36b4c-12d7-49c8-8cd3-e9eaa531df66))
     (pin "2" (uuid 376fe8f6-84cb-4733-b190-1ece6c945a1e))
     (instances
-      (project "ctm_battery c"
+      (project "ctm_battery"
         (path "/f12fd207-0ea8-4e5e-ba5d-32f4ff7fde19"
           (reference "C5") (unit 1)
         )
@@ -2454,7 +2399,7 @@
     (pin "1" (uuid aee38b3a-40af-42a0-ab09-942b1feb4948))
     (pin "2" (uuid 43063925-0a61-4ca4-b593-54c33ad4bfd9))
     (instances
-      (project "ctm_battery c"
+      (project "ctm_battery"
         (path "/f12fd207-0ea8-4e5e-ba5d-32f4ff7fde19"
           (reference "L1") (unit 1)
         )
@@ -2462,24 +2407,24 @@
     )
   )
 
-  (symbol (lib_id "power:GND") (at 144.78 85.09 0) (unit 1)
+  (symbol (lib_id "power:GND") (at 138.43 85.09 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 9298e0dc-945c-4ede-acf8-199a6115b08e)
-    (property "Reference" "#PWR08" (at 144.78 91.44 0)
+    (property "Reference" "#PWR08" (at 138.43 91.44 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Value" "GND" (at 144.78 88.9 0)
+    (property "Value" "GND" (at 138.43 88.9 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 144.78 85.09 0)
+    (property "Footprint" "" (at 138.43 85.09 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "" (at 144.78 85.09 0)
+    (property "Datasheet" "" (at 138.43 85.09 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 8b2cbb8d-c2e0-49a0-b87a-b815894dd72d))
     (instances
-      (project "ctm_battery c"
+      (project "ctm_battery"
         (path "/f12fd207-0ea8-4e5e-ba5d-32f4ff7fde19"
           (reference "#PWR08") (unit 1)
         )
@@ -2505,7 +2450,7 @@
     (pin "1" (uuid 0cfb19a1-23ad-40de-99a2-55ed5a5c5236))
     (pin "2" (uuid ff5aabde-a54c-493f-ac46-753fceb58ac8))
     (instances
-      (project "ctm_battery c"
+      (project "ctm_battery"
         (path "/f12fd207-0ea8-4e5e-ba5d-32f4ff7fde19"
           (reference "J2") (unit 1)
         )
@@ -2530,7 +2475,7 @@
     )
     (pin "1" (uuid 86ac3bdc-7cae-474a-90cd-3d5f7e1d07b7))
     (instances
-      (project "ctm_battery c"
+      (project "ctm_battery"
         (path "/f12fd207-0ea8-4e5e-ba5d-32f4ff7fde19"
           (reference "#PWR018") (unit 1)
         )
@@ -2555,7 +2500,7 @@
     )
     (pin "1" (uuid 91254f30-f604-45d7-b122-e6281237af5c))
     (instances
-      (project "ctm_battery c"
+      (project "ctm_battery"
         (path "/f12fd207-0ea8-4e5e-ba5d-32f4ff7fde19"
           (reference "#PWR03") (unit 1)
         )
@@ -2580,7 +2525,7 @@
     )
     (pin "1" (uuid c94532ad-ed66-4bb2-9fb0-786449a2c123))
     (instances
-      (project "ctm_battery c"
+      (project "ctm_battery"
         (path "/f12fd207-0ea8-4e5e-ba5d-32f4ff7fde19"
           (reference "#PWR0104") (unit 1)
         )
@@ -2605,7 +2550,7 @@
     )
     (pin "1" (uuid f68f375a-9c66-45dd-8f8d-bc545ee3704c))
     (instances
-      (project "ctm_battery c"
+      (project "ctm_battery"
         (path "/f12fd207-0ea8-4e5e-ba5d-32f4ff7fde19"
           (reference "#PWR0102") (unit 1)
         )
@@ -2622,16 +2567,16 @@
     (property "Value" "25%" (at 88.9 50.8 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
-    (property "Footprint" "slk:LED_0402" (at 87.63 50.8 0)
+    (property "Footprint" "slk:LED_RA_0402" (at 87.63 50.8 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "https://datasheet.lcsc.com/szlcsc/1809141612_BrtLed-Bright-LED-Elec-BL-HZ337A-L6-TRB_C189305.pdf" (at 87.63 50.8 0)
+    (property "Datasheet" "https://media.digikey.com/pdf/Data%20Sheets/Harvatek%20PDFs/B1861TX--05P000334U1930.pdf" (at 87.63 50.8 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid e4218d17-76bc-429d-a888-13c1150fbf36))
     (pin "2" (uuid 00e0f79c-d02e-4988-b7ee-318886c79eab))
     (instances
-      (project "ctm_battery c"
+      (project "ctm_battery"
         (path "/f12fd207-0ea8-4e5e-ba5d-32f4ff7fde19"
           (reference "D1") (unit 1)
         )
@@ -2656,7 +2601,7 @@
     )
     (pin "1" (uuid f9dec121-c2f5-4344-a4d5-2432de0af78c))
     (instances
-      (project "ctm_battery c"
+      (project "ctm_battery"
         (path "/f12fd207-0ea8-4e5e-ba5d-32f4ff7fde19"
           (reference "#PWR0101") (unit 1)
         )
@@ -2681,7 +2626,7 @@
     )
     (pin "1" (uuid b0d8ebb2-cb5c-4a04-bbc9-ec929d27fe3d))
     (instances
-      (project "ctm_battery c"
+      (project "ctm_battery"
         (path "/f12fd207-0ea8-4e5e-ba5d-32f4ff7fde19"
           (reference "#PWR016") (unit 1)
         )
@@ -2695,7 +2640,7 @@
     (property "Reference" "C6" (at 73.66 74.93 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "10u" (at 73.66 80.01 0)
+    (property "Value" "4.7u" (at 73.66 80.01 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (at 73.3552 81.28 0)
@@ -2707,7 +2652,7 @@
     (pin "1" (uuid 1635ad4b-ca60-4577-b84a-5d43fa5098b0))
     (pin "2" (uuid 18c6c5ee-c011-4e25-a436-24a51bac7a3d))
     (instances
-      (project "ctm_battery c"
+      (project "ctm_battery"
         (path "/f12fd207-0ea8-4e5e-ba5d-32f4ff7fde19"
           (reference "C6") (unit 1)
         )
@@ -2733,7 +2678,7 @@
     (pin "1" (uuid ea2f1c52-fe8e-446d-a565-3ffce2954c01))
     (pin "2" (uuid 0aebdae4-4349-4712-9836-a14fd62c72bb))
     (instances
-      (project "ctm_battery c"
+      (project "ctm_battery"
         (path "/f12fd207-0ea8-4e5e-ba5d-32f4ff7fde19"
           (reference "J3") (unit 1)
         )
@@ -2758,7 +2703,7 @@
     )
     (pin "1" (uuid b692efc8-a008-4af2-8dcc-06f34b3838a6))
     (instances
-      (project "ctm_battery c"
+      (project "ctm_battery"
         (path "/f12fd207-0ea8-4e5e-ba5d-32f4ff7fde19"
           (reference "#PWR020") (unit 1)
         )
@@ -2784,7 +2729,7 @@
     (pin "1" (uuid 8995743a-0166-4a94-a07b-fc5c361e9554))
     (pin "2" (uuid 47c9bcd7-f626-4c25-9714-30911bd0dee2))
     (instances
-      (project "ctm_battery c"
+      (project "ctm_battery"
         (path "/f12fd207-0ea8-4e5e-ba5d-32f4ff7fde19"
           (reference "C4") (unit 1)
         )
@@ -2795,7 +2740,7 @@
   (symbol (lib_id "slk:IP5306") (at 124.46 43.18 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid d3add98a-ec1a-4de9-b6b9-af75b7021190)
-    (property "Reference" "U1" (at 129.54 52.07 0)
+    (property "Reference" "U1" (at 119.38 52.07 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "IP5306_CK" (at 124.46 34.29 0)
@@ -2817,7 +2762,7 @@
     (pin "8" (uuid dedf37df-8d8e-443c-a1b1-3bfa38ec7e4b))
     (pin "9" (uuid 161b0105-66eb-4533-8762-4c243fc8d4a1))
     (instances
-      (project "ctm_battery c"
+      (project "ctm_battery"
         (path "/f12fd207-0ea8-4e5e-ba5d-32f4ff7fde19"
           (reference "U1") (unit 1)
         )
@@ -2842,7 +2787,7 @@
     )
     (pin "1" (uuid 61494227-8747-4c39-9ab5-b465663fd76f))
     (instances
-      (project "ctm_battery c"
+      (project "ctm_battery"
         (path "/f12fd207-0ea8-4e5e-ba5d-32f4ff7fde19"
           (reference "#PWR01") (unit 1)
         )
@@ -2850,24 +2795,24 @@
     )
   )
 
-  (symbol (lib_id "power:GND") (at 105.41 85.09 0) (unit 1)
+  (symbol (lib_id "power:GND") (at 102.87 86.36 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid e876bff4-2a94-4d7e-ab34-2eecb1ee2348)
-    (property "Reference" "#PWR02" (at 105.41 91.44 0)
+    (property "Reference" "#PWR02" (at 102.87 92.71 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Value" "GND" (at 105.41 88.9 0)
+    (property "Value" "GND" (at 102.87 90.17 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 105.41 85.09 0)
+    (property "Footprint" "" (at 102.87 86.36 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "" (at 105.41 85.09 0)
+    (property "Datasheet" "" (at 102.87 86.36 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 4e1c3895-a382-4105-9de8-a76239385d5e))
     (instances
-      (project "ctm_battery c"
+      (project "ctm_battery"
         (path "/f12fd207-0ea8-4e5e-ba5d-32f4ff7fde19"
           (reference "#PWR02") (unit 1)
         )
@@ -2893,9 +2838,40 @@
     (pin "1" (uuid e7304b78-5f0f-47a3-8048-d4a216138464))
     (pin "2" (uuid 795d506d-e130-4ebe-b641-4e8ed30e4cec))
     (instances
-      (project "ctm_battery c"
+      (project "ctm_battery"
         (path "/f12fd207-0ea8-4e5e-ba5d-32f4ff7fde19"
           (reference "C8") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "slk:RT8010") (at 102.87 76.2 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid f38a6a04-ca64-44d1-b153-dbf0e9be517c)
+    (property "Reference" "U2" (at 106.68 82.55 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "RT8010" (at 102.87 71.12 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "slk:WDFN-6L_2x2" (at 95.25 86.36 0)
+      (effects (font (size 1.27 1.27)) (justify left) hide)
+    )
+    (property "Datasheet" "https://www.richtek.com/assets/product_file/RT8010=RT8010A/DS8010A-12.pdf" (at 101.6 88.9 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 99c5debb-b8bb-48ae-a0d7-40a6351290cd))
+    (pin "2" (uuid 8b40fd52-e3f8-470c-8015-db4ab3b52a94))
+    (pin "3" (uuid 13ba0df7-1180-4d18-83ee-cfdc8c2a7fe1))
+    (pin "4" (uuid 329bc4bf-4fa9-4ddd-ba6f-498563403800))
+    (pin "5" (uuid 4dce21b4-ce4e-43b6-bc56-0fcba5564c94))
+    (pin "6" (uuid bbbfda5f-c897-48bb-88f6-93e06ff83f6f))
+    (pin "7" (uuid 34f9ec35-ab9d-4ef1-8e6f-1e569b2b6a52))
+    (instances
+      (project "ctm_battery"
+        (path "/f12fd207-0ea8-4e5e-ba5d-32f4ff7fde19"
+          (reference "U2") (unit 1)
         )
       )
     )
@@ -2921,7 +2897,7 @@
     (pin "3" (uuid 63e16489-2e17-44d5-8339-96429df0c60a))
     (pin "4" (uuid a107aa1c-976c-4468-8993-481820059839))
     (instances
-      (project "ctm_battery c"
+      (project "ctm_battery"
         (path "/f12fd207-0ea8-4e5e-ba5d-32f4ff7fde19"
           (reference "SW1") (unit 1)
         )
@@ -2929,25 +2905,25 @@
     )
   )
 
-  (symbol (lib_id "Device:L") (at 121.92 71.12 90) (unit 1)
+  (symbol (lib_id "Device:L") (at 115.57 73.66 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid f6d1e6ae-6f41-48d4-8a5b-06c2e34d74aa)
-    (property "Reference" "L2" (at 121.92 68.58 90)
+    (property "Reference" "L2" (at 115.57 71.12 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "2.2u" (at 121.92 72.39 90)
+    (property "Value" "2.2u" (at 115.57 74.93 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "slk:L_Vishay_IHHP_0806ZH" (at 121.92 71.12 0)
+    (property "Footprint" "slk:L_Vishay_IHHP_0806ZH" (at 115.57 73.66 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "https://www.vishay.com/docs/34591/ihhp-0806zh-01.pdf" (at 121.92 71.12 0)
+    (property "Datasheet" "https://www.vishay.com/docs/34591/ihhp-0806zh-01.pdf" (at 115.57 73.66 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid fbd5347e-f6fc-43a8-961b-8c0eb189a47e))
     (pin "2" (uuid 3828275d-173f-41ef-a876-1b31dad71d2c))
     (instances
-      (project "ctm_battery c"
+      (project "ctm_battery"
         (path "/f12fd207-0ea8-4e5e-ba5d-32f4ff7fde19"
           (reference "L2") (unit 1)
         )
@@ -2955,24 +2931,24 @@
     )
   )
 
-  (symbol (lib_id "power:+3V3") (at 127 69.85 0) (unit 1)
+  (symbol (lib_id "power:+3V3") (at 120.65 72.39 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid f7948635-334d-4bfc-a748-499802571680)
-    (property "Reference" "#PWR05" (at 127 73.66 0)
+    (property "Reference" "#PWR05" (at 120.65 76.2 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Value" "+3V3" (at 127 66.04 0)
+    (property "Value" "+3V3" (at 120.65 68.58 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 127 69.85 0)
+    (property "Footprint" "" (at 120.65 72.39 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "" (at 127 69.85 0)
+    (property "Datasheet" "" (at 120.65 72.39 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 19e6d301-7a29-4b95-8312-58da1b6610eb))
     (instances
-      (project "ctm_battery c"
+      (project "ctm_battery"
         (path "/f12fd207-0ea8-4e5e-ba5d-32f4ff7fde19"
           (reference "#PWR05") (unit 1)
         )
@@ -2983,7 +2959,7 @@
   (symbol (lib_id "Device:R") (at 138.43 48.26 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid fc59f736-8915-4064-9a78-8666cfe5f89c)
-    (property "Reference" "R3" (at 138.43 45.72 90)
+    (property "Reference" "R1" (at 138.43 45.72 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "10K" (at 138.43 50.8 90)
@@ -2998,9 +2974,9 @@
     (pin "1" (uuid 0181667e-836e-4ab9-becc-bd1eb04af7f8))
     (pin "2" (uuid ea63282b-074d-4469-b1a5-87e9c186d6a5))
     (instances
-      (project "ctm_battery c"
+      (project "ctm_battery"
         (path "/f12fd207-0ea8-4e5e-ba5d-32f4ff7fde19"
-          (reference "R3") (unit 1)
+          (reference "R1") (unit 1)
         )
       )
     )
@@ -3023,7 +2999,7 @@
     )
     (pin "1" (uuid a657c8f4-f9fe-48a0-b15e-2c33c0c2fdf9))
     (instances
-      (project "ctm_battery c"
+      (project "ctm_battery"
         (path "/f12fd207-0ea8-4e5e-ba5d-32f4ff7fde19"
           (reference "#PWR04") (unit 1)
         )
@@ -3037,7 +3013,7 @@
     (property "Reference" "C7" (at 80.01 74.93 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "22u" (at 80.01 80.01 0)
+    (property "Value" "10u" (at 80.01 80.01 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (at 79.7052 81.28 0)
@@ -3049,7 +3025,7 @@
     (pin "1" (uuid abe3857a-661f-4b9a-aaa8-4a43398c0f46))
     (pin "2" (uuid e388dc0e-980e-4a41-b15c-fd5a3606b313))
     (instances
-      (project "ctm_battery c"
+      (project "ctm_battery"
         (path "/f12fd207-0ea8-4e5e-ba5d-32f4ff7fde19"
           (reference "C7") (unit 1)
         )
